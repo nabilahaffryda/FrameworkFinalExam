@@ -1,0 +1,69 @@
+[debug] [2021-06-16T14:17:03.658Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T14:17:03.661Z] Command:       D:\apk\node js\node.exe D:\apk\node js\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-06-16T14:17:03.662Z] CLI Version:   9.13.0
+[debug] [2021-06-16T14:17:03.662Z] Platform:      win32
+[debug] [2021-06-16T14:17:03.662Z] Node Version:  v14.15.0
+[debug] [2021-06-16T14:17:03.663Z] Time:          Wed Jun 16 2021 21:17:03 GMT+0700 (Indochina Time)
+[debug] [2021-06-16T14:17:03.664Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T14:17:03.673Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T14:17:03.673Z] > authorizing via signed-in user (bilahunni@gmail.com)
+[debug] [2021-06-16T14:17:03.674Z] [iam] checking project uas-project-a3765 for permissions ["firebase.projects.get"]
+[debug] [2021-06-16T14:17:03.676Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uas-project-a3765:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-06-16T14:17:05.729Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 14:17:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1002","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T14:17:05.733Z] > refreshing access token with scopes: []
+[debug] [2021-06-16T14:17:05.733Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T14:17:05.898Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Jun 2021 14:17:05 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T14:17:05.922Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 [none]
+[debug] [2021-06-16T14:17:06.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 200
+[debug] [2021-06-16T14:17:06.451Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 {"projectId":"uas-project-a3765","projectNumber":"207551473527","displayName":"UAS-Project","name":"projects/uas-project-a3765","resources":{"hostingSite":"uas-project-a3765","realtimeDatabaseInstance":"uas-project-a3765-default-rtdb","storageBucket":"uas-project-a3765.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'D:\react\frontend'...
+[info] 
+[debug] [2021-06-16T14:17:06.462Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites 
+[debug] [2021-06-16T14:17:07.871Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites 200
+[debug] [2021-06-16T14:17:07.872Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites {"sites":[{"name":"projects/207551473527/sites/uas-project-a3765","defaultUrl":"https://uas-project-a3765.web.app","appId":"1:207551473527:web:41e0daf966d235d2022372","type":"DEFAULT_SITE"}]}
+[debug] [2021-06-16T14:17:07.873Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config [none]
+[debug] [2021-06-16T14:17:09.215Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config 200
+[debug] [2021-06-16T14:17:09.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config {"projectId":"uas-project-a3765","appId":"1:207551473527:web:41e0daf966d235d2022372","databaseURL":"https://uas-project-a3765-default-rtdb.firebaseio.com","storageBucket":"uas-project-a3765.appspot.com","locationId":"us-central","apiKey":"AIzaSyCH1gY2AT38cvINuoHMGKDKZ1adQfgpfFU","authDomain":"uas-project-a3765.firebaseapp.com","messagingSenderId":"207551473527","measurementId":"G-TX410BYMEN"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-06-16T15:16:38.588Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T15:16:38.590Z] Command:       D:\apk\node js\node.exe D:\apk\node js\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-06-16T15:16:38.591Z] CLI Version:   9.13.0
+[debug] [2021-06-16T15:16:38.591Z] Platform:      win32
+[debug] [2021-06-16T15:16:38.591Z] Node Version:  v14.15.0
+[debug] [2021-06-16T15:16:38.605Z] Time:          Wed Jun 16 2021 22:16:38 GMT+0700 (Indochina Time)
+[debug] [2021-06-16T15:16:38.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T15:16:38.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T15:16:38.619Z] > authorizing via signed-in user (bilahunni@gmail.com)
+[debug] [2021-06-16T15:16:38.619Z] [iam] checking project uas-project-a3765 for permissions ["firebase.projects.get"]
+[debug] [2021-06-16T15:16:38.627Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-16T15:16:38.628Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T15:16:38.852Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Jun 2021 15:16:39 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T15:16:38.888Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/uas-project-a3765:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-06-16T15:16:40.054Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 15:16:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1004","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T15:16:40.056Z] > refreshing access token with scopes: []
+[debug] [2021-06-16T15:16:40.057Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T15:16:40.183Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Jun 2021 15:16:40 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T15:16:40.218Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 [none]
+[debug] [2021-06-16T15:16:40.625Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 200
+[debug] [2021-06-16T15:16:40.626Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765 {"projectId":"uas-project-a3765","projectNumber":"207551473527","displayName":"UAS-Project","name":"projects/uas-project-a3765","resources":{"hostingSite":"uas-project-a3765","realtimeDatabaseInstance":"uas-project-a3765-default-rtdb","storageBucket":"uas-project-a3765.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'D:\react\frontend'...
+[info] 
+[debug] [2021-06-16T15:16:40.629Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites 
+[debug] [2021-06-16T15:16:42.282Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites 200
+[debug] [2021-06-16T15:16:42.282Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/uas-project-a3765/sites {"sites":[{"name":"projects/207551473527/sites/uas-project-a3765","defaultUrl":"https://uas-project-a3765.web.app","appId":"1:207551473527:web:41e0daf966d235d2022372","type":"DEFAULT_SITE"}]}
+[debug] [2021-06-16T15:16:42.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config [none]
+[debug] [2021-06-16T15:16:43.442Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config 200
+[debug] [2021-06-16T15:16:43.443Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uas-project-a3765/webApps/1:207551473527:web:41e0daf966d235d2022372/config {"projectId":"uas-project-a3765","appId":"1:207551473527:web:41e0daf966d235d2022372","databaseURL":"https://uas-project-a3765-default-rtdb.firebaseio.com","storageBucket":"uas-project-a3765.appspot.com","locationId":"us-central","apiKey":"AIzaSyCH1gY2AT38cvINuoHMGKDKZ1adQfgpfFU","authDomain":"uas-project-a3765.firebaseapp.com","messagingSenderId":"207551473527","measurementId":"G-TX410BYMEN"}
+[warn] !  hosting: Port 5000 is not available. Trying another port... {"metadata":{"emulator":{"name":"hosting"},"message":"\u001b[33mhosting: \u001b[39mPort 5000 is not available. Trying another port..."}}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
