@@ -6,7 +6,7 @@ import Product from './components/Product'
 import Logout from './components/Logout'
 import Login from './components/Login'
 import { connect } from "react-redux";
-import ContactUs from './components/ContactUs'
+import AboutUs from './components/AboutUs'
 import ProtectedRoute from "./components/protectedRoute";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -19,8 +19,8 @@ function App (props){
           <Switch>
           <ProtectedRoute
             exact
-            path="/contactus"
-            component={ContactUs}
+            path="/aboutus"
+            component={AboutUs}
             isAuthenticated={isAuthenticated}
             isVerifying={isVerifying}
           />

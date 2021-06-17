@@ -37,30 +37,6 @@ export class Product extends Component {
             this.saveDataToServerAPI();
         }
     }
-    // saveImage = () => {
-    //     if(this.state.imageProduct !== null){
-    //         firebase
-    //             .storage()
-    //             .ref(`/product-image/${this.state.imageProduct.image}`)
-    //             .put(this.state.imageProduct);
-    //     }
-    // }
-
-    // onImageChange = (event) => {
-    //     if(event.target.files && event.target.files[0]){
-    //         let filename = event.target.files[0].name;
-    //         let timestamp = new Date().getTime.toString();
-    //         let reader = new FileReader();
-    //         reader.onload = (e) => {
-    //             this.setState({
-    //                 imageProduct : event.target.files[0],
-    //                 image : e.target.result,
-                    
-    //             });
-    //         };
-    //         reader.readAsDataURL(event.target.files[0]);
-    //     }
-    // }
 
     handleAddProduct = (event) => {
         let formInsertProduct = { ...this.state.insertProduct};
@@ -136,7 +112,7 @@ export class Product extends Component {
                                             </div>
                                             <div className="form-group">
                                             <div>
-                                                <input className="form-control" ref="imageProduct" id="image" name="image" type="text" onChange={this.handleAddProduct} placeholder="Picture" />
+                                                <input className="form-control" ref="imageProduct" id="image" name="image" type="text" onChange={this.handleAddProduct} placeholder="Link of Image" />
                                             </div>
                                             </div>
                                         </div>
@@ -144,7 +120,7 @@ export class Product extends Component {
                                     </center><br></br>
                                     <div className="clearfix">
                                         <div>
-                                        <button className="btn btn-primary"  onClick={this.handleSave} type="submit">
+                                        <button className="btn btn-success"  onClick={this.handleSave} type="submit">
                                             Add Product
                                         </button>
                                         </div>

@@ -46,9 +46,6 @@ const ProductContext = (props) => {
                                         props.deleteProduct(props.idProduct)}}>
                                             Delete
                                     </button>
-                                    {/* <a className="add-to-cart" href="#" data-button-action="add-to-cart">
-                                    <i className="fa fa-shopping-cart" aria-hidden="true" />
-                                    </a> */}
                                 </form>
                                 </div>
                             </div>

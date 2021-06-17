@@ -46,43 +46,13 @@ class Header extends Component{
                                 <a href="/product" className="parent">Product</a>
                             </li>
                             <li>
-                                <a href="/contactus" className="parent">Contact Us</a>
+                                <a href="/aboutus" className="parent">About Us</a>
                             </li>
                             </ul>
                         </div>
                         </div>
                         <div className="col-sm-5 col-md-5 d-flex align-items-center justify-content-end" id="search_widget">
-                            {/* <div id="block_myaccount_infos" className="hidden-sm-down dropdown">
-                            <div className="myaccount-title ">
-                                <a href="#acount" data-toggle="collapse" className="acount">
-                                <i className="fa fa-user" aria-hidden="true" />
-                                <span> Account</span>
-                                <i className="fa fa-angle-down" aria-hidden="true" />
-                                </a>
-                            </div>
-                            <div id="acount" className="collapse">
-                                <div className="account-list-content">
-                                <div>
-                                    <a className="login" href="/login" rel="nofollow" title="Log in">
-                                    <i className="fa fa-sign-in" />
-                                    <span>Sign in</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="register" href="/register" rel="nofollow" title="Register Account">
-                                    <i className="fa fa-user" />
-                                    <span>Register Account</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="sign-out" href="/logout" rel="nofollow" title="Log out">
-                                    <i className="fa fa-sign-out" aria-hidden="true" />
-                                    <span>Sign out</span>
-                                    </a>
-                                </div>
-                                </div>
-                            </div>
-                            </div> */}
+                        
                             <div id="block_myaccount_infos" className="hidden-sm-down dropdown">
                                 <div className="myaccount-title ">
                                 <a href="/login" data-toggle="collapse" className="acount">
