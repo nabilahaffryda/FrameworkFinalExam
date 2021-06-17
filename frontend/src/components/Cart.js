@@ -131,14 +131,14 @@ export class Cart extends Component {
                                     return(
                                 <li className="cart-item">
                                     <div className="product-line-grid row justify-content-between">
-                                        <div className="product-line-grid-left col-md-1">
+                                        <div className="product-line-grid-left col-md-2">
                                             <span className="product-image media-middle">
                                             <a href="#">
                                                 <img className="img-fluid" src={item.image} alt="#" />
                                             </a>
                                             </span>
                                         </div>
-                                        <div className="product-line-grid-body col-md-2">
+                                        <div className="product-line-grid-body col-md-6">
                                             <div className="product-line-info">
                                             <a className="label" href="#" data-id_customization={0}>{item.title}</a>
                                             </div>
@@ -158,14 +158,14 @@ export class Cart extends Component {
                                                         <button className="btn btn-touchspin js-touchspin bootstrap-touchspin-up" 
                                                         onClick={() => this.setQty(item.pid, ++item.qty)} data-field="quant[1]" data-type="plus" type="button">+</button>
                                                     </div>
-                                                    <div>
+                                                    {/* <div> */}
                                                         <input type="text" name="quant[1]" data-min={1} data-max={100} value={item.qty}className="input-group form-control" />
-                                                    </div>
-                                                    <div className="btn minus">
+                                                    {/* </div> */}
+                                                    {/* <div className="btn minus"> */}
+                                                    &nbsp;
                                                         <button  data-field="quant[1]" onClick={() => this.setQty(item.pid, --item.qty)} 
                                                         className="btn btn-touchspin js-touchspin bootstrap-touchspin-down" data-type="minus" type="button">-</button>
-                                                    </div>
-                                                    
+                                                    {/* </div> */}
                                                 </div>
                                             </div>
                                             <div className="col-md-5 col price">
